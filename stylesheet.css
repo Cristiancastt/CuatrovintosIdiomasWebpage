@@ -1,0 +1,328 @@
+body {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+.accordion-item{
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+}
+.imagenes {
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.imagenes:hover {
+  transform: scale(1.02);
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+p {
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1 {
+  text-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card {
+  margin: 2%;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 2%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor: default;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.card-header {
+  box-shadow: none;
+  border: 0;
+}
+
+i {
+  margin-right: 15px;
+}
+
+#Inicio {
+  background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0) 10%,
+      rgba(0, 0, 0, 0.835) 25%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(./img/cuatrovientos1.jpg);
+  background-color: #cccccc71;
+  background-position: 0px -30px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 4px,
+    rgba(6, 24, 44, 0.65) 0px 1px 0px 1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#logonav {
+  scale: 230%;
+}
+#idioma {
+  text-shadow: 2px 2px 3px rgba(8, 8, 8, 0.233);
+  margin: 0px;
+}
+#idioma:hover {
+  cursor: default;
+}
+
+
+nav i {
+  margin-right: 10px;
+}
+nav ul li:hover {
+  overflow: visible;
+  transform: translateY(-3px);
+  transition-duration: 0.6s;
+  text-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+nav {
+  color: white;
+  text-shadow: 2px 2px 3px rgba(8, 8, 8, 0.233);
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  padding: 1% 2%;
+  margin: 0;
+  background-color: #121518d2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#arrow {
+  margin-right: 0px;
+  margin-left: 10px;
+  color: #ffffffa4;
+}
+#ig {
+  border-radius: 40px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 21px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+#ig:hover {
+  color: #0000001d;
+}
+
+/* Estilo para ocultar la ventana modal por defecto */
+.modal {
+  display: none;
+}
+
+/* Estilo para mostrar la ventana modal cuando se agrega la clase is-active */
+.modal.is-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para la imagen dentro de la ventana modal */
+#imagenModal-img {
+  max-height: 90vh;
+  max-width: 90vw;
+}
+.cardPeque {
+  transform: scale(0.8);
+}
+
+#oxford {
+  width: 15vw;
+  margin-left: 20vw;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.parrafos {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.cardespecial {
+  box-shadow: rgba(42, 226, 14, 0.4) 0px 0px 0px 2px,
+    rgba(13, 83, 164, 0.65) 0px 4px 6px -1px,
+    rgba(239, 173, 6, 0.08) 0px 1px 0px inset;
+}
+
+.cardespecial:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor: default;
+  box-shadow: rgba(7, 214, 3, 0.377) 0px 0px 0px 3px;
+}
+
+.footer {
+  box-shadow: rgba(6, 24, 44, 0.308) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#logofooter {
+  width: 30vw;
+  filter: drop-shadow(2px 2px 2px #22222216);
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+iframe:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor: default;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+table thead tr th figure img {
+  width: 200px;
+  height: 200px;
+}
+
+#logoInicio {
+  width: 15vw;
+  margin-left: 20vw;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#logoInicio {
+  animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Dan*/
+
+.hidden {
+  display: none;
+}
+
+.cardBoton:hover {
+  cursor: pointer;
+}
+
+/*.accordion-content {
+  display: none;
+}*/
+/*------------------*/
+
+
+
+.texto-desencadenante:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  transition-duration: 0.01s;
+  font-weight: bolder;
+  user-select: none;
+}
+
+
+.cbis-active{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor: default;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+
+#modalImagen{
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+
+
+.page-loader {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  border-radius: 90px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  background-color: white;
+  color: #198fde;
+  position: fixed;
+}
+.page-loader .progress {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.page-loader .progress::-webkit-progress-bar {
+  background-color: #e5e5e5;
+  border-radius: 50%;
+}
+
+.page-loader .progress::-webkit-progress-value {
+  background-color: #00d1b2;
+  border-radius: 50%;
+}
+
+.page-loader:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+
+
+.fa-caret-down{
+  color: #198fde;
+  cursor: pointer;
+}
+
+
+
+.accordion-item{
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}

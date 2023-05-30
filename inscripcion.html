@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oxford Test Of English - Cuatrovientos Idiomas</title>
+    <link rel="stylesheet" href="./bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script async defer src="/bulma.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="icon" href="./img/logo1.png" type="image/png">
+    <script async defer src="./email.js"></script>
+</head>
+
+<body>
+    <div id="page-loader" class="page-loader">
+        <i class="fa-solid fa-arrow-up ml-2"></i>
+        <progress class="progress is-small is-info" max="100"></progress>
+    </div>
+<div class="hero is-info is-medium is-bold">
+    <div class="hero-head">
+        <nav class="navbar is-fixed-top has-background-info">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="./index.html">
+                        <img id="logonav" src="./img/logo1.png" alt="Cuatrovientos
+                                Idiomas Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu ">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li><a href="./index.html"><i class="fa-solid fa-house"></i>
+                                        Inicio</a></li>
+                                <li><a href="./cursos.html"><i class="fa-solid
+                                                fa-graduation-cap"></i>
+                                        Cursos</a></li>
+                                <li><a href="./certificaciones.html"><i class="fa-solid
+                                                fa-certificate"></i>Certificaciones</a></li>
+                                <li class="is-active"><a href="./inscripcion.html"><i class="fa-sharp
+                                                fa-solid fa-phone"></i>Inscribete</a></li>
+                                                <li><a href="./faqs.html"><i class="fa-solid fa-question"></i>FAQS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="section" id="Inicio">
+    <div class="columns pt-6 p-6">
+        <div class="column ml-6 content is-medium mt-6">
+            <h2 class="title has-text-white parrafos is-1">Formulario de
+                inscripción<br></h2>
+            <p class="parrafos">
+                ¡Bienvenido! Estamos encantados de que estés interesado
+                en inscribirte en nuestro programa.<br> Completa nuestro
+                breve formulario de inscripción para obtener acceso
+                instantáneo a una variedad de recursos educativos y
+                comenzar a aprender el idioma que siempre has querido
+                aprender.<br> Es rápido y fácil de hacer, ¡así que no dudes
+                más!<br> ¡Únete a nuestra comunidad global de aprendizaje de
+                idiomas hoy mismo!
+            </p>
+        </div>
+        <div class="column mr-6 mt-6 ml-6">
+            <figure class="image ">
+                <img id="logoInicio" src="./img/logo1.png" alt="Logo
+                        Cuatrovientos">
+            </figure>
+        </div>
+    </div>
+</div>
+
+
+
+<form class="p-6 m-6">
+    <div class="columns is-multiline">
+        <div class="column is-half p-6">
+            <div class="field">
+                <label class="label">Nombre y Apellidos</label>
+                <div class="control">
+                    <input onkeyup="validarNombre()" class="input" id="nombre" type="text" placeholder="Ana Maria Sanchez López" >
+                </div>
+                <p id="nombreError" class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control">
+                    <input onkeyup="comprobarEmail()" class="input" id="email" type="email"
+                        placeholder="sanchez_ana@cuatrovientos.org" >
+                </div>
+                <p id="errorEmail" class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Teléfono</label>
+                <div class="control">
+                    <input onkeyup="comprobarTelefono()" class="input" id="telefono" type="tel" placeholder="617913587">
+                </div>
+                <p id="telefonoError" class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">DNI</label>
+                <div class="control">
+                    <input id="dni" onkeyup="comprobarDNI()" class="input" type="text" placeholder="11111111H">
+                </div>
+                <p id="dniError" class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Fecha de nacimiento</label>
+                <div class="control">
+                    <input class="input" id="fecha" type="date">
+                </div>
+                <p id="fechaError" class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Foto de perfil</label>
+                <div class="control">
+                    <div class="file has-name">
+                        <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                                <span class="file-icon">
+                                    <i class="fa-solid fa-file-import"></i>
+                                </span>
+                                <span class="file-label">
+                                    Importa una imagen
+                                </span>
+                            </span>
+                            <span class="file-name">
+
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Género</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="direccion">
+                <div class="field">
+                    <label class="label">Pais de nacimiento</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="España" name="pais">
+                    </div>
+                    <p class="help is-danger"></p>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Ciudad de nacimiento</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Navarra" name="ciudadNacimiento">
+                    </div>
+                    <p class="help is-danger"></p>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Código postal</label>
+                    <div class="control">
+                        <input id="cp" onkeyup="comprobarCP()" class="input" type="text" placeholder="31012">
+                    </div>
+                    <p id="cpError" class="help is-danger"></p>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Dirección</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Avda.Navarra" name="direccion">
+                    </div>
+                    <p class="help is-danger"></p>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="column is-half p-6">
+
+            <div class="field">
+                <label class="label">Nivel de estudios</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Secundaria</option>
+                            <option>Bachillerato</option>
+                            <option>FP Basica</option>
+                            <option>FP Medio</option>
+                            <option>FP Superior</option>
+                            <option>Grado universitario</option>
+                            <option>Posgrado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">¿Cómo nos has conocido?</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Por ejemplo, buscando en Google">
+                </div>
+            </div>
+
+            <div class="field experiencia">
+                <div class="field">
+                    <label class="label">¿Tienes alguna experiencia
+                        previa en el idioma que deseas aprender?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="experiencia" value="Sí">
+                            Sí
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="experiencia" value="No">
+                            No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field idioma">
+                    <label class="label">¿Qué idioma deseas aprender?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input id="ingles" type="radio" name="idioma" value="Inglés">
+                            Inglés
+                        </label>
+                        <label class="radio">
+                            <input id="frances" type="radio" name="idioma" value="Francés">
+                            Francés
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">¿Qué nivel tienes en el idioma
+                        que deseas aprender?</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>A1 - Básico</option>
+                                <option>A2 - Pre-intermedio</option>
+                                <option>B1 - Intermedio</option>
+                                <option>B2 - Intermedio-Alto</option>
+                                <option class="ocultar">C1 - Avanzado</option>
+                                <option class="ocultar">C2 - Avanzado</option>
+                                <option class="ocultar">Refuerzo</option>
+                                <option class="ocultar">Speaking</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field modalidad">
+                    <label class="label">¿Qué modalidad prefieres?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="modalidad" value="Presencial">
+                            Presencial
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="modalidad" value="Online">
+                            Online
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field horario">
+                    <label class="label">¿Qué horarios te vienen mejor?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="horario" value="Mañana">
+                            Mañana
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="horario" value="Tarde">
+                            Tarde
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Comentarios adicionales</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Cuéntanos cualquier otra información que consideres importante"></textarea>
+                    </div>
+                </div>
+
+                <label class="checkbox ">
+                    <input id="terminos" type="checkbox">
+                    Acepto los <a href="#">términos y condiciones</a>.
+                </label>
+                <p id="chError" class="help is-danger mb-3"></p>
+
+                <div class="field">
+                    <div class="control">
+                        <button id="botonEnviar" class="button is-info
+                                is-fullwidth">Enviar Formulario</button>
+                    </div>
+                </div>
+
+                <div id="success" class="notification is-success is-hidden">
+                    <button class="delete"></button>
+                    <p><strong>Información:</strong> La operación se ha completado con éxito, formulario enviado.</p>
+                </div>
+                  
+                <div id="error" class="notification is-danger is-hidden">
+                    <button class="delete"></button>
+                    <p><strong>Error:</strong> Algún campo parece estar erroneo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+
+<footer class="footer p-6 ">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-4">
+                <img id="logofooter" src="./img/logo.png" alt="logo
+                        cuatrovientos">
+
+            </div>
+            <div class="column is-inline-block is-centered">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid
+                            fa-calendar"></i>Horario</h2>
+                <div class="footer-links is-size-7">
+                    <p class="subtitle is-6">
+
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">Curso
+                            Escolar</span><br>
+                        Lunes a viernes: de 9:00 hasta 14:00 h.<br>
+                        Martes: de 16:30 hasta 18:30 h.<br>
+
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">Teléfono</span>:
+                        948 124129
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid
+                            fa-school"></i>Centro</h2>
+                <div class="footer-links is-size-7">
+                    <p class="subtitle is-6">
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">CENTRO
+                            INTEGRADO CUATROVIENTOS</span><br>
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">Tel</span>:
+                        (34) 948 12 41 29<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:info@cuatrovientos.org">info@cuatrovientos.org</a></span>.<br>
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">CUATROVIENTOS
+                            IDIOMAS</span><br>
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">Tel</span>:
+                        (34) 948 31 55 58<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:idiomas@cuatrovientos.org">idiomas@cuatrovientos.org</a></span>.<br>
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">CUATROVIENTOS
+                            TECNOLÓGICO Y VUE</span><br>
+                        <span class=" is-6 is-italic
+                                has-text-weight-semibold">Tel</span>:
+                        (+34) 848 46 03 33<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:certificaciones@cuatrovientos.org">certificaciones@cuatrovientos.org</a></span>.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid
+                            fa-location-dot"></i>Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11705.198743866435!2d-1.659854!3d42.824283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5092855cefdac7%3A0xab7c62765f5209e2!2sCuatrovientos%20Centro%20Integrado!5e0!3m2!1ses!2ses!4v1683745037340!5m2!1ses!2ses"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8">
+                    <p id="year" class="help"></p>
+                <div class="column is-4 ">
+                    <ul class="social-icons is-size-4 ">
+                        <li class="is-inline-block"><a class="facebook
+                                    has-text-link" href="https://www.facebook.com/cipcuatrovientos/"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="is-inline-block"><a class="twitter
+                                    has-text-info" href="https://twitter.com/_cuatrovientos"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="is-inline-block"><a class="instagram
+                                    has-text-link" href="https://www.instagram.com/cipcuatrovientos/?hl=es"><i
+                                    class="fab fa-instagram" id="ig"></i></a></li>
+                        <li class="is-inline-block"><a class="linkedin
+                                    has-text-info"
+                                href="https://www.linkedin.com/in/cuatrovientos-artean-57434883?original_referer=http%3A%2F%2Fwww.cuatrovientos.org%2F"><i
+                                    class="fab fa-linkedin"></i></a>
+                        <li class="is-inline-block"><a class="linkedin
+                                        has-text-danger" href="https://www.youtube.com/user/alviento"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script async defer src="./alert.js"></script>
+<script async defer src="./copyright.js"></script>
+<script>
+    const fileInput = document.querySelector('#file-js-example input[type=file]');
+    fileInput.onchange = () => {
+        if (fileInput.files.length > 0) {
+            const fileName = document.querySelector('#file-js-example .file-name');
+            fileName.textContent = fileInput.files[0].name;
+        }
+    }
+</script>
+</body>
+
+</html>

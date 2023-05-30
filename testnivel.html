@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cuatrovientos Idiomas</title>
+    <link rel="stylesheet" href="./bulma.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async defer src="/bulma.js"></script>
+    <script src="./test.js"></script>
+  </head>
+
+  <body>
+    <section id="Inicio" class="hero is-info is-medium is-bold">
+      <div class="hero-head">
+        <nav class="navbar is-fixed-top has-background-info">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="./index.html">
+                <img src="./img/logo1.png" alt="Cuatrovientos Idiomas Logo" />
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="tabs is-right">
+                  <ul>
+                    <li>
+                      <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li>
+                      <a href="./cursos.html"
+                        ><i class="fa-solid fa-graduation-cap"></i> Cursos</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./testnivel.html"
+                        ><i class="fa-solid fa-pen"></i>Test De
+                        Nivel</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./certificaciones.html"
+                        ><i class="fa-solid fa-certificate"></i>
+                        Certificaciones</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./inscripcion.html"
+                        ><i class="fa-sharp fa-solid fa-phone"></i>Inscribete</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Cuatrovientos Idiomas</h1>
+          <h2 class="subtitle">
+            Desde 2008, en Cuatrovientos Idiomas tenemos un objetivo
+            primordial:<br />
+            Ayudar a nuestros alumnos a comunicarse en inglés o francés de forma
+            eficaz. Si quieres empezar a estudiar un idioma desde cero, obtener
+            un certificado oficial que acredite tu nivel de idiomas (EOI, PET,
+            FCE, CAE, DELF, DALF, entre otros), mejorar tu confianza en hablar
+            inglés o francés, o incluso mejorar tus competencias lingüísticas en
+            otro idioma para el trabajo,<br />
+            ¡estás en el lugar adecuado! <br />En Cuatrovientos Idiomas,
+            nuestros expertos profesores te ayudarán a alcanzar tus objetivos
+            lingüísticos.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="box cta">
+        <p class="has-text-centered">
+            <span class="tag is-success">NEW</span> ¡Inscríbete en
+            nuestros cursos y aprende un nuevo idioma hoy mismo!
+        </p>
+    </div>
+    <!--Fin Menu de navegacion-->
+
+    <section class="columns is-vcentered">
+      <div class="column">
+        <p class="title article-title">Test de Nivel</p>
+        <div class="content article-body">
+          <p>
+            No solo ofrecemos un test de nivel online gratuito para evaluar al
+            instante sus habilidades lingüísticas: también le preparamos de
+            manera eficaz e individual para cualquier test oficial de idiomas.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img
+          class="imagenes"
+          src="img/profesores.jpg"
+          alt="Foto Logo Cuatrovientos"
+        />
+      </div>
+    </section>
+    <hr />
+
+    <!--Fin Cabecera-->
+
+    <div class="columns">
+      <div class="column is-4 is-offset-4">
+        <div class="card nivel">
+          <div class="card-content">
+            <div class="content">Mi nivel en:</div>
+            <div class="content">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button
+                    class="button"
+                    aria-haspopup="true"
+                    aria-controls="dropdown-menu"
+                  >
+                    <span>Idioma</span>
+                    <span class="icon is-small">
+                      <i class="fa-solid fa-arrow-down"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a
+                      id="frances"
+                      href="#idioma"
+                      class="dropdown-item"
+                      onclick="frances()"
+                    >
+                      Francés
+                    </a>
+                    <a
+                      id="ingles"
+                      href="#idioma"
+                      class="dropdown-item is-active"
+                      onclick="ingles()"
+                    >
+                      Inglés
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin Dropdown-->
+
+    <section class="container">
+      <div class="entry-content-wrapper clearfix">
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span class="title is-4" id="idioma">
+                    <i class="fa-solid fa-pen"></i>
+                    Prueba de Nivel Inglés
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p class="">
+                    Una vez realices la prueba online el resultado de la misma
+                    te llegará por correo electrónico.
+                  </p>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd5cUvX4QLajZPfalOm0PSDf6PZ-tUiX-A6ffwOqzl_yIl_-g/viewform"
+                  class="card-footer-item has-text-weight-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="formIdioma" onclick="desbloquear()"
+                >
+                  INGLÉS
+                </a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <div class="columns p-6">
+      <div class="column">
+          <div class="card">
+              <header class="card-header">
+                  <p class="card-header-title is-centered has-text-centered ">
+                      <span class="title is-4 has-text-info"><i class="fa-solid
+                                  fa-list"></i>Formulario Matrícula</span>
+                  </p>
+              </header>
+              <div class="card-content">
+                  <div class="content">
+                      <p>¡Nos complace que hayas decidido
+                          inscribirte en Cuatrovientos Idiomas!
+                          Por favor, completa el siguiente
+                          formulario de matrícula para que podamos
+                          ayudarte a comenzar tu viaje
+                          lingüístico.</p>
+                  </div>
+              </div>
+              <footer class="card-footer">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAaxZCXkkLXyoTN4uvWnsMHvano4WQ5fo24gZ_nN1mtmF4Aw/viewform"
+                      class="card-footer-item matricula has-text-weight-bold" target="_blank" rel="noopener noreferrer" id="matricula">
+                      MATRÍCULATE
+                  </a>
+              </footer>
+          </div>
+      </div>
+      <div class="column">
+          <div class="card">
+              <header class="card-header">
+                  <p class="card-header-title is-centered has-text-centered">
+                      <span class="title is-4 has-text-info"><i class="fa-sharp
+                                  fa-solid fa-chalkboard-user"></i>Prueba
+                          una clase
+                          gratis sin compromiso</span>
+                  </p>
+              </header>
+              <div class="card-content">
+                  <div class="content">
+                      <p class="">¿Quieres aprender un nuevo
+                          idioma pero no estás seguro de por dónde
+                          empezar? ¡Cuatrovientos Idiomas tiene la
+                          solución perfecta para ti! Prueba una
+                          clase gratis sin compromiso y descubre
+                          cómo nuestros expertos profesores pueden
+                          ayudarte a alcanzar tus metas
+                          lingüísticas.</p>
+                  </div>
+              </div>
+              <footer class="card-footer">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScy9ziI48_1lyFb-oakgfsHs0i7mc6srBJo8Ygn7N6cMavUsQ/viewform"
+                      class="card-footer-item matricula
+                          has-text-weight-bold" target="_blank" rel="noopener noreferrer">
+                      PRUEBA GRATIS
+                  </a>
+              </footer>
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer p-6 ">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-4">
+                <img id="logofooter" src="./img/logo.png" alt="logo
+                cuatrovientos">
+
+            </div>
+            <div class="column is-inline-block is-centered">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid fa-calendar"></i>Horario</h2>
+                <div class="footer-links is-size-7">
+                    <p class="subtitle is-6">
+
+                        <span class=" is-6 is-italic has-text-weight-semibold">Curso
+                            Escolar</span><br>
+                        Lunes a viernes: de 9:00 hasta 14:00 h.<br>
+                        Martes: de 16:30 hasta 18:30 h.<br>
+
+                        <span class=" is-6 is-italic has-text-weight-semibold">Teléfono</span>:
+                        948 124129
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid fa-school"></i>Centro</h2>
+                <div class="footer-links is-size-7">
+                    <p class="subtitle is-6">
+                        <span class=" is-6 is-italic has-text-weight-semibold">CENTRO
+                            INTEGRADO CUATROVIENTOS</span><br>
+                        <span class=" is-6 is-italic has-text-weight-semibold">Tel</span>:
+                        (34) 948 12 41 29<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:info@cuatrovientos.org">info@cuatrovientos.org</a></span>.<br>
+                        <span class=" is-6 is-italic has-text-weight-semibold">CUATROVIENTOS
+                            IDIOMAS</span><br>
+                        <span class=" is-6 is-italic has-text-weight-semibold">Tel</span>:
+                        (34) 948 31 55 58<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:idiomas@cuatrovientos.org">idiomas@cuatrovientos.org</a></span>.<br>
+                        <span class=" is-6 is-italic has-text-weight-semibold">CUATROVIENTOS
+                            TECNOLÓGICO Y VUE</span><br>
+                        <span class=" is-6 is-italic has-text-weight-semibold">Tel</span>:
+                        (+34) 848 46 03 33<br>
+                        <span class="has-text-weight-bold"><a
+                                href="mailto:certificaciones@cuatrovientos.org">certificaciones@cuatrovientos.org</a></span>.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="title is-5 has-text-info"><i class="fa-solid fa-location-dot"></i>Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11705.198743866435!2d-1.659854!3d42.824283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5092855cefdac7%3A0xab7c62765f5209e2!2sCuatrovientos%20Centro%20Integrado!5e0!3m2!1ses!2ses!4v1683745037340!5m2!1ses!2ses"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8">
+                <p id="year" class="is-size-7">&copy; Todos los derechos
+                    reservados por Cuatrovientos Idiomas.</p>
+                <div class="column is-4 ">
+                    <ul class="social-icons is-size-4 ">
+                        <li class="is-inline-block"><a class="facebook has-text-link"
+                                href="https://www.facebook.com/cipcuatrovientos/"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="is-inline-block"><a class="twitter
+                            has-text-info" href="https://twitter.com/_cuatrovientos"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="is-inline-block"><a class="instagram
+                            has-text-link" href="https://www.instagram.com/cipcuatrovientos/?hl=es"><i
+                                    class="fab fa-instagram" id="ig"></i></a></li>
+                        <li class="is-inline-block"><a class="linkedin
+                            has-text-info"
+                                href="https://www.linkedin.com/in/cuatrovientos-artean-57434883?original_referer=http%3A%2F%2Fwww.cuatrovientos.org%2F"><i
+                                    class="fab fa-linkedin"></i></a>
+                        <li class="is-inline-block"><a class="linkedin
+                                has-text-danger" href="https://www.youtube.com/user/alviento"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  </body>
+</html>

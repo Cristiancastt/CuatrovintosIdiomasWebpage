@@ -1,0 +1,32 @@
+.card.nivel{
+    text-align: center;
+}
+
+.level-item{
+    width: 100%;
+}
+
+.container, .columns.p-6{
+    display: grid;
+    place-items: center;
+}
+
+
+.card.frances{
+    visibility: hidden;
+}
+
+.columns{
+    padding: 30px 100px;
+}
+
+.card-image{
+    width: 50%;
+}
+
+.card-footer-item.matricula{
+    color: gray !important;
+}
+
+/*Borrar*/
+
